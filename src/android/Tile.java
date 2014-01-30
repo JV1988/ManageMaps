@@ -6,7 +6,7 @@ public class Tile {
     private int rightNr;
     private String name;
     
-    public Tile(leftNr, rightNr, name) {
+    public Tile(int leftNr, int rightNr, String name) {
     	this.leftNr = leftNr;
     	this.rightNr = rightNr;
     	this.name = name;
