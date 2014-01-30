@@ -21,6 +21,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/ManageMaps.java" target-dir="src/com/periskal/manageMaps" />      
+        <source-file src="src/android/ManageMaps.java" target-dir="src/com/periskal/manageMaps" />   
+        <source-file src="src/android/Tile.java" target-dir="src/com/periskal/manageMaps" />
      </platform>          
 </plugin>
