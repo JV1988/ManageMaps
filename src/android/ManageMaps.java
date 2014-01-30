@@ -19,8 +19,8 @@ public class ManageMaps extends CordovaPlugin {
                 JSONObject arg_object = args.getJSONObject(0);
                 
                 Tile test = new Tile(12, 23, 'jeroen');
-                JSONObject object=new JSONObject();
-		object.put("newRow",test);
+                //JSONObject object=new JSONObject();
+		//object.put("newRow",test);
                 
                 callbackContext.success();
                 return true;
