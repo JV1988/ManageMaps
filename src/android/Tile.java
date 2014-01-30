@@ -1,8 +1,8 @@
 package com.periskal.manageMaps;
 
 public class Tile {
-	
-	private int leftNr;
+
+    private int leftNr;
     private int rightNr;
     private String name;
     
