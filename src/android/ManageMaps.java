@@ -20,10 +20,10 @@ public class ManageMaps extends CordovaPlugin {
                 
                 Tile test = new Tile(arg_object.getFloat("latitude"), arg_object.getFloat("longitude"));
                 JSONObject object=new JSONObject();
-				
+		object.put("newRow",test);
                 
-               callbackContext.success();
-               return object;
+                callbackContext.success();
+                return object;
             }
             callbackContext.error("Invalid action");
             return false;
