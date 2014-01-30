@@ -7,7 +7,7 @@ var manageMaps =  {
             'goToLatLonPosition', // with this action name
             [{                  // and this array of custom arguments to create our entry
                 "latitude": latitude,
-                "longitude": notes
+                "longitude": longitude
             }]
         );
     }
