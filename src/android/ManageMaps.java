@@ -31,7 +31,8 @@ public class ManageMaps extends CordovaPlugin {
         } catch(Exception e) {
             System.err.println("Exception: " + e.getMessage());
             callbackContext.error(e.getMessage());
-            return null;
+            JSONObject object2=new JSONObject();
+            return object2;
         } 
     }
 }
