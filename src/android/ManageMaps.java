@@ -23,7 +23,7 @@ public class ManageMaps extends CordovaPlugin {
                 JSONObject object=new JSONObject();
 		object.put("newRow",test);
                 
-                callbackContext.success(object);
+                callbackContext.success("object");
                 return true;
             }
             callbackContext.error("Invalid action");
