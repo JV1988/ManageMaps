@@ -18,9 +18,9 @@ public class ManageMaps extends CordovaPlugin {
             if (ACTION_GO_TO_LAT_LON_POSITION.equals(action)) { 
                 JSONObject arg_object = args.getJSONObject(0);
                 
-                //Tile test = new Tile(arg_object.getFloat("latitude"), arg_object.getFloat("longitude"), "jeroen");
-                //JSONObject object=new JSONObject();
-		//object.put("newRow",test);
+                Tile test = new Tile(arg_object.getFloat("latitude"), arg_object.getFloat("longitude"), "jeroen");
+                JSONObject object=new JSONObject();
+		object.put("newRow",test);
                 
                 callbackContext.success();
                 return true;
