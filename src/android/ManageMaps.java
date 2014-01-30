@@ -13,7 +13,7 @@ public class ManageMaps extends CordovaPlugin {
     public static final String ACTION_GO_TO_LAT_LON_POSITION = "goToLatLonPosition";
     
     @Override
-    public JSONObject execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         try {
             if (ACTION_GO_TO_LAT_LON_POSITION.equals(action)) { 
                 JSONObject arg_object = args.getJSONObject(0);
@@ -24,7 +24,7 @@ public class ManageMaps extends CordovaPlugin {
 		object.put("newRow",test);
                 
                 callbackContext.success();
-                return object;
+                return true;
             }
             callbackContext.error("Invalid action");
             return false;
@@ -32,7 +32,7 @@ public class ManageMaps extends CordovaPlugin {
             System.err.println("Exception: " + e.getMessage());
             callbackContext.error(e.getMessage());
             JSONObject object2=new JSONObject();
-            return object2;
+            return false;
         } 
     }
 }
