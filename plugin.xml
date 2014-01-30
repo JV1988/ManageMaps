@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.periskal.manageMaps"
+      version="0.1.0">
+    <name>ManageMaps</name>
+    <description>Phonegap ManageMaps plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap,manageMaps</keywords>
+
+
+    <js-module src="www/manageMaps.js" name="ManageMaps">
+        <clobbers target="window.manageMaps" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ManageMaps">
+                <param name="android-package" value="com.periskal.manageMaps.ManageMaps"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ManageMaps.java" target-dir="src/com/periskal/manageMaps" />      
+     </platform>          
+</plugin>
